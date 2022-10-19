@@ -27,6 +27,22 @@
       <cite><a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element">hr要素</a></cite>
     </p>
     <br>
+
+    <p><h2>meter要素</h2>
+      既知の範囲内のスカラー値、または小数値を表す。たとえば、ディスク使用量、クエリー結果の関連性、または特定の候補を選択するための投票人口の割合などである。<br><br>
+      <b>マークアップ例</b><br>
+      <ol>
+        <li>&lt;meter value=&quot;0.4&quot;&gt;&lt;/meter&gt;</li>
+        <li>&lt;meter value=&quot;70&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;70%&lt;/meter&gt;</li>
+      </ol>
+      <b>実行例</b>
+      <ol>
+        <li><meter value="0.4"></meter></li>
+        <li><meter value="70" min="0" max="100">70%/meter></li>
+      </ol><br>
+      <b>参考サイト：</b>
+      <cite><a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element">meter要素</a></cite>
+    </p><br>
     <p><h2>select要素</h2>
       select要素は、一連のオプションの中から選択するためのコントロールを表します。<br><br>
       <b>マークアップ例</b><br>
@@ -56,6 +72,21 @@
             </code>
           </pre>
         </li>
+        <li>
+          <pre>
+            <code>
+              &lt;label for=&quot;want_to_go&quot;&gt;行きたいところは？(複数選択可)&lt;/label&gt;
+              &lt;select id=&quot;want_to_go&quot; name=&quot;place&quot; multiple&gt;
+              &lt;option value=&quot;1&quot;&gt; 東京 &lt;/option&gt;
+              &lt;option value=&quot;2&quot;&gt; 大阪 &lt;/option&gt;
+              &lt;option value=&quot;3&quot;&gt; 京都 &lt;/option&gt;
+              &lt;option value=&quot;4&quot;&gt; 北海道 &lt;/option&gt;
+              &lt;option value=&quot;5&quot;&gt; 沖縄 &lt;/option&gt;
+              &lt;option value=&quot;6&quot;&gt; 海外 &lt;/option&gt;
+              &lt;option value=&quot;7&quot;&gt; そのほか &lt;/option&gt;&lt;/select&gt;
+            </code>
+          </pre>
+        </li>
       </ol>
       <b>実行例</b>
       <ol>
@@ -80,26 +111,23 @@
             <option value="3"> どちらでもない </option></select>
           </p>
         </li>
+        <li>
+          <p>
+            <label for="want_to_go">行きたいところは？(複数選択可)</label>
+            <select id="want_to_go" name="place" multiple>
+            <option value="1"> 東京 </option>
+            <option value="2"> 大阪 </option>
+            <option value="3"> 京都 </option>
+            <option value="4"> 北海道 </option>
+            <option value="5"> 沖縄 </option>
+            <option value="6"> 海外 </option>
+            <option value="7"> そのほか </option></select>
+          </p>
+        </li>
       </ol><br>
       <b>参考サイト：</b>
       <cite><a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element">select要素</a></cite>
     </p><br>
-
-    <p><h2>meter要素</h2>
-      既知の範囲内のスカラー値、または小数値を表す。たとえば、ディスク使用量、クエリー結果の関連性、または特定の候補を選択するための投票人口の割合などである。<br><br>
-      <b>マークアップ例</b><br>
-      <ol>
-        <li>&lt;meter value=&quot;0.4&quot;&gt;&lt;/meter&gt;</li>
-        <li>&lt;meter value=&quot;70&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;70%&lt;/meter&gt;</li>
-      </ol>
-      <b>実行例</b>
-      <ol>
-        <li><meter value="0.4"></meter></li>
-        <li><meter value="70" min="0" max="100">70%/meter></li>
-      </ol><br>
-      <b>参考サイト：</b>
-      <cite><a href="https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element">meter要素</a></cite>
-    </p>
     <br><br>
     <b>参考文献：</b>
     『HTML Living Standard』<a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a> 2022.10.19
